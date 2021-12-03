@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: 'Outfit';
+
+  /* Primary */
+  --Soft_blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --Very_dark_blue_main: hsl(217, 54%, 11%);
+  --Very_dark_blue_card: hsl(216, 50%, 16%);
+  --Very_dark_blue_line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+main {
+  background-color: var(--Very_dark_blue_main);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+}
+img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+p {
+  max-width: 300px;
+}
+h3 {
+  font-size: 24px;
+  margin-bottom: 7%;
+  color: var(--White);
+  transition: 0.2s;
+  cursor: pointer;
+}
+span {
+  color: var(--White);
+  transition: 0.2s;
+}
+hr {
+  border: none;
+  background-color: var(--Very_dark_blue_line);
+  height: 1px;
+}
+a {
+  text-decoration: none;
+  color: var(--White);
+  transition: 0.2s;
+}
+#finish {
+  text-align: center;
+  color: var(--White);
+}
+#equilibrium {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.text {
+  max-width: 300px;
+}
+.p {
+  font-size: 18px;
+  margin-bottom: 6%;
+  color: var(--Soft_blue);
+}
+.container {
+  box-shadow: 1px 16px 25px 2px rgba(0, 0, 0, 0.6);
+  display: grid;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: var(--Very_dark_blue_card);
+  padding: 1.5%;
+  max-width: 375px;
+  height: 70%;
+  margin: 4em 1em;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.icon-ethereum {
+  display: flex;
+  color: var(--Cyan);
+}
+.icon-clock {
+  display: flex;
+  color: var(--Soft_blue);
+}
+.et_cl {
+  margin-right: 0.5em;
+}
+.bottom {
+  display: flex;
+  height: 0px;
+}
+#line {
+  color: var(--Very_dark_blue_line);
+}
+#avatar {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+}
+.avatar {
+  color: var(--Soft_blue);
+  margin-left: 5%;
+}
+#equilibrium:hover {
+  range: url(images/icon-view.svg);
+}
+a:hover {
+  color: var(--Cyan);
+}
+span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+h3:hover {
+  color: var(--Cyan);
+}
