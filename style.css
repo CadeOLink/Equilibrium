@@ -1,3 +1,6 @@
+/* Use a margin na div.bottom para deixa-lo reposivo */
+/* Use a padding da div.container para deixa-lo reposivo */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -76,9 +79,11 @@ a {
   justify-content: center;
   border-radius: 10px;
   background-color: var(--Very_dark_blue_card);
+  /* Usar isso para deixar reposivo */
   padding: 1.5%;
+  /*  */
   max-width: 375px;
-  height: 70%;
+  height: 78%;
   margin: 4em 1em;
 }
 .icons {
@@ -98,8 +103,10 @@ a {
   margin-right: 0.5em;
 }
 .bottom {
+  /* Coloque padding para deixa-lo reposivo */
   display: flex;
   height: 0px;
+  align-items: stretch;
 }
 #line {
   color: var(--Very_dark_blue_line);
@@ -126,4 +133,75 @@ span:hover {
 }
 h3:hover {
   color: var(--Cyan);
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    padding: 5%;
+  }
+  .container {
+    padding: 5%;
+    margin: 1em 1em;
+  }
+  .bottom {
+    margin: 10% 0;
+  }
+}
+@media screen and (min-width: 375px) {
+  main {
+    padding: 5%;
+  }
+  .container {
+    padding: 5%;
+    margin: 1em 1em;
+  }
+  .bottom {
+    margin: 10% 0;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  main {
+    padding: 0% 15%;
+  }
+  h3 {
+    margin-bottom: 3%;
+  }
+  .container {
+    padding: 4%;
+    margin: 1em;
+  }
+  .p {
+    margin-bottom: 4%;
+  }
+  .bottom {
+    margin: 8% 0;
+  }
+  .icons {
+    margin: 3% 0%;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    height: 100%;
+  }
+  .container {
+    padding: 2% 2% 5% 2%;
+    margin: 1.5em;
+  }
+  .bottom {
+    margin-top: 5%;
+  }
+  .icons {
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 800px) {
+  main {
+    height: 100vh;
+  }
+  .container {
+    padding: 1.5%;
+    margin: 4em 1em;
+  }
 }
